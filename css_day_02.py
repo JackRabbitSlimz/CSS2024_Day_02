@@ -1,0 +1,1 @@
+import pandas as pd# iris = pd.read_csv("/Users/macbookair/CSS_Day_02_/iris.csv")# df = pd.read_csv("country_data_index.csv", index_col = 0)df = pd.read_excel("residentdoctors.xlsx")print(df.info())# transforming data, first renaming a col and then extracting specific info from itdf["Lower_Age"] = df["AGEDIST"].str.extract('(\+d)')
